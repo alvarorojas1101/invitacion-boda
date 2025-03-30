@@ -1,0 +1,31 @@
+{
+  "name": "invitacion-matrimonio-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^3.3.4",
+    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/vercel": "^8.0.4",
+    "@fontsource-variable/raleway": "^5.0.20",
+    "@fontsource-variable/rubik": "^5.0.22",
+    "@fontsource/parisienne": "^5.0.13",
+    "@midudev/tailwind-animations": "^0.0.7",
+    "@nextui-org/react": "^2.3.6",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
+    "astro": "^5.5.5",
+    "firebase": "^11.5.0",
+    "framer-motion": "^11.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.51.5",
+    "tailwindcss": "^3.4.3"
+  }
+}
