@@ -61,6 +61,7 @@ function DressCodeModal() {
                       Traje Formal: Se recomienda el uso de traje oscuro con
                       camisa y corbata.
                     </span>
+                    <span>Color Sugerido: Evitar el blanco y perla.</span>
                     <span className="font-semibold">Mujeres:</span>
                     <span>
                       Vestido de Cóctel o Gala: Vestidos largos o cortos

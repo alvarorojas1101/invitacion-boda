@@ -121,7 +121,7 @@ function TipsModal() {
                   <li style={li}>
                     <span className="font-semibold">Celebración:</span>
 
-                    <span>La Celebración será a las 20:30 horas.</span>
+                    <span>La Celebración será a las 19:00 horas.</span>
                   </li>
                 </ul>
 
