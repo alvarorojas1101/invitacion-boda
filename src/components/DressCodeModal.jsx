@@ -58,16 +58,25 @@ function DressCodeModal() {
                     </span>
                     <span className="font-semibold">Hombres:</span>
                     <span>
-                      Traje Formal: Se recomienda el uso de traje oscuro con
-                      camisa y corbata.
+                      Semi-Formal: Se recomienda el uso de traje o la opción de
+                      camisa manga larga y pantalón de vestir. Evitar prendas de
+                      jean.
                     </span>
-                    <span>Color Sugerido: Evitar el blanco y perla.</span>
+                    <span>
+                      Color Sugerido: Evitar el blanco, perla, hueso, beige y
+                      colores muy claros.
+                    </span>
                     <span className="font-semibold">Mujeres:</span>
                     <span>
-                      Vestido de Cóctel o Gala: Vestidos largos o cortos
-                      elegantes son bienvenidos.
+                      Semi-Formal: pueden optar por un vestido o falda corte
+                      midi o por encima de las rodillas, asi como también
+                      pantalón de vestir, blusa formal, jumsuit. Evitar prendas
+                      de jean y tops.
                     </span>
-                    <span>Color Sugerido: Evitar el blanco y perla.</span>
+                    <span>
+                      Color Sugerido: Evitar el blanco, perla, hueso, beige y
+                      colores muy claros.
+                    </span>
                     <span>
                       Agradecemos de antemano su comprensión y colaboración para
                       que todos luzcan espectaculares en esta ocasión tan
