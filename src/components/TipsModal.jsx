@@ -15,6 +15,14 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 function TipsModal() {
+  const [copied, setCopied] = useState("");
+  const handleCopy = (text, label) => {
+    navigator.clipboard.writeText(text).then(() => {
+      setCopied(label);
+      setTimeout(() => setCopied(""), 2000);
+    });
+  };
+
   const { isOpen, onOpen, onClose, onOpenChange } = useDisclosure();
 
   const title = {
@@ -114,8 +122,8 @@ function TipsModal() {
                     <span className="font-semibold">Ceremonia Civil:</span>
                     <span>
                       {" "}
-                      Comienza puntualmente a las 12:30 horas, así que por
-                      favor, llega al menos 15 minutos antes.
+                      Comienza puntualmente a las 12:00 horas, así que por
+                      favor, llega puntualmente.
                     </span>
                   </li>
                   <li style={li}>
@@ -125,63 +133,76 @@ function TipsModal() {
                   </li>
                 </ul>
 
-                <h3 style={title}>Comidas y Bebidas</h3>
+                <h3 style={title}>peticiónes</h3>
                 <ul style={list}>
                   <li style={li}>
-                    <span className="font-semibold">Menú:</span>
+                    <span className="font-semibold">Invitados:</span>
                     <span>
-                      Esperamos que disfrutes de la cena que hemos preparado
-                      para ti.
-                    </span>
-                  </li>
-                </ul>
-                <h3 style={title}>Reglas</h3>
-                <ul style={list}>
-                  <li style={li}>
-                    <span className="font-semibold">Solo Adultos:</span>
-                    <span>
-                      Para garantizar que todos nuestros invitados puedan
-                      disfrutar plenamente de la celebración, amablemente
-                      solicitamos que este sea un evento para adultos.
-                      Apreciamos mucho su comprensión y apoyo en esta decisión.
-                      Solo se aceptan: Andres y mia y samba y lupe
+                      Por favor, te pedimos respetar la cantidad de invitados
+                      asignados que figuran junto con el link de esta
+                      invitación. Esto nos ayudará a tener una mejor
+                      organización y asegurar que todos estén cómodos. ¡Gracias
+                      por tu comprensión!
                     </span>
                   </li>
                   <li style={li}>
                     <span className="font-semibold">Fotografía:</span>
 
                     <span>
-                      Te pedimos que evites tomar fotografias que puedan
-                      interferir con el desarrollo de la ceremonia, luego de
+                      Te pedimos que evites tomar fotografías que puedan
+                      interferir con el desarrollo de la ceremonia. Luego de
                       ello, siéntete libre de tomar las fotos que desees. No
-                      olvides etiquetarnos en tus redes sociales con el hashtag
-                      #AlvaroyJersy
+                      olvides etiquetarnos en tus redes sociales con el hashtag{" "}
+                      <strong>#AlvaroyJersy</strong>. Y no te olvides de subir
+                      tus fotos y videos al <strong>drive</strong> para
+                      compartir los recuerdos con todos 🤍
                     </span>
                   </li>
                 </ul>
-                <h3 style={title}>Regalos</h3>
-                <ul style={list}>
-                  <li style={li}>
+                <h3 className="font-bold text-base">Regalos</h3>
+                <ul className="flex flex-col gap-2 ml-4">
+                  <li className="text-sm flex flex-col gap-1">
                     Estamos muy emocionados de celebrar nuestro matrimonio con
                     ustedes y estamos profundamente agradecidos por su amor y
-                    apoyo. Si desean honrarnos con un regalo, les agradecemos de
-                    antemano por su generosidad.
+                    apoyo. Si desean honrarnos con un regalo, estas son algunas
+                    opciones:
                   </li>
-                  <li style={li}>
-                    <span className="font-semibold">Jersy:</span>
+
+                  <li className="text-sm flex flex-col gap-1">
+                    <span className="font-semibold">1. Lluvia de sobres:</span>
                     <span>
-                      INTERBANK: 8983305997546
-                      <br />
-                      CCI: 00389801330599754645
+                      Puedes depositar tu sobre en nuestra caja de regalos y
+                      deseos el día del evento.💌
                     </span>
                   </li>
-                  <li style={li}>
-                    <span className="font-semibold">Alvaro:</span>
-                    <span>
-                      BCP: 29519490244091
-                      <br />
-                      CCI: 00229511949024409146
+
+                  <li className="text-sm flex flex-col gap-1">
+                    <span className="font-semibold">2. CBU:</span>
+                    <span className="flex items-center gap-2">
+                      Alvaro Rojas
                     </span>
+                    <div className="flex items-center gap-2">
+                      <span>1430001713006928230013</span>
+                      <button
+                        onClick={() =>
+                          handleCopy("1430001713006928230013", "CBU")
+                        }
+                        className="text-xs px-2 py-1 rounded-md bg-gray-200 hover:bg-gray-300 transition">
+                        {copied === "CBU" ? "Copiado ✅" : "Copiar"}
+                      </button>
+                    </div>
+                  </li>
+
+                  <li className="text-sm flex flex-col gap-1">
+                    <span className="font-semibold">3. Nequi:</span>
+                    <div className="flex items-center gap-2">
+                      <span>3138802021</span>
+                      <button
+                        onClick={() => handleCopy("3138802021", "Nequi")}
+                        className="text-xs px-2 py-1 rounded-md bg-gray-200 hover:bg-gray-300 transition">
+                        {copied === "Nequi" ? "Copiado ✅" : "Copiar"}
+                      </button>
+                    </div>
                   </li>
                 </ul>
                 <div className="flex flex-col gap-1 justify-end items-end ">
