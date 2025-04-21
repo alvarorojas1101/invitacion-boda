@@ -10,7 +10,7 @@ const { src, texto, height = "100vh" } = Astro.props;
     muted
     loop
     playsinline
-    class="absolute top-0 left-0 w-full h-full object-cover z-0">
+    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover md:w-auto md:h-full md:object-contain z-0">
     <source src={src} type="video/webm" />
     Tu navegador no soporta el video.
   </video>
