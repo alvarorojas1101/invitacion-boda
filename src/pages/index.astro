@@ -7,23 +7,29 @@ import Message from "@/sections/Message.astro";
 import Party from "@/sections/Party.astro";
 import Instagram from "@/sections/Instagram.astro";
 import Footer from "@/sections/Footer.astro";
-
+import VideoSection from "@/sections/VideoSection.astro";
 ---
 
 <Layout title="Boda de Alvaro y Jersy">
-	<div id="hero" 
-	class="hidden"
-	>
-
-			<Hero />
-			<section class="p-4">
-				<Countdown />
-				<PrincipalDate />
-				<Message />
-				<Party />
-				<Instagram />
-				<Footer />
-			</section>
-
-	</div>
+  <div id="hero" class="hidden">
+    <Hero />
+    <VideoSection
+      src="/videos/inicio.mp4"
+      texto="Un momento especial antes del gran día"
+      height="100vh"
+    />
+    <section class="p-4">
+      <Countdown />
+      <PrincipalDate />
+      <Message />
+      <Party />
+      <VideoSection
+        src="/videos/momento.mp4"
+        texto="Revive con nosotros este viaje de amor"
+        height="70vh"
+      />
+      <Instagram />
+      <Footer />
+    </section>
+  </div>
 </Layout>

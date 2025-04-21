@@ -1,0 +1,21 @@
+---
+const { src, texto, height = "100vh" } = Astro.props;
+---
+
+<section
+  class="relative w-full overflow-hidden my-8"
+  style={`height: ${height}`}>
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    class="absolute top-0 left-0 w-full h-full object-cover z-0">
+    <source src={src} type="video/mp4" />
+    Tu navegador no soporta el video.
+  </video>
+  <div
+    class="relative z-10 flex items-center justify-center h-full bg-black/40 text-white text-center px-4">
+    <h2 class="text-xl md:text-3xl font-semibold">{texto}</h2>
+  </div>
+</section>
