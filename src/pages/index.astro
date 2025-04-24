@@ -8,12 +8,14 @@ import Party from "@/sections/Party.astro";
 import Instagram from "@/sections/Instagram.astro";
 import Footer from "@/sections/Footer.astro";
 import VideoSection from "@/sections/VideoSection.astro";
+import PrincipalMessage from "@/sections/PrincipalMessage.astro";
 ---
 
-<Layout title="Boda de Alvaro y Jersy">
+<Layout title="Boda de Alvaro & Jersy">
   <div id="hero" class="hidden">
     <Hero />
     <VideoSection src="/videos/inicio.webm" height="100vh" />
+    <PrincipalMessage />
     <section class="p-4">
       <Countdown />
       <PrincipalDate />

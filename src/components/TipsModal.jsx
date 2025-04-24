@@ -207,7 +207,7 @@ function TipsModal() {
                 </ul>
                 <div className="flex flex-col gap-1 justify-end items-end ">
                   <span className="font-parisienne text-color01 text-lg font-bold">
-                    Alvaro y Jersy
+                    Alvaro & Jersy
                   </span>
                 </div>
               </ModalBody>
