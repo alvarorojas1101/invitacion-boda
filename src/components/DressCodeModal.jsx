@@ -63,8 +63,8 @@ function DressCodeModal() {
                       jean.
                     </span>
                     <span>
-                      Color Sugerido: Por favor, evitar el blanco, perla, hueso,
-                      beige, azul y colores muy claros.
+                      Color Sugerido: Por favor, evitar los colores blanco,
+                      perla, hueso, beige, azul y/o colores muy claros.
                     </span>
                     <span className="font-semibold">Mujeres:</span>
                     <span>
@@ -74,8 +74,8 @@ function DressCodeModal() {
                       de jean y tops.
                     </span>
                     <span>
-                      Color Sugerido: Por favor, evitar el blanco, perla, hueso,
-                      beige, azul y colores muy claros.
+                      Color Sugerido: Por favor, evitar los colores, perla,
+                      hueso, beige, azul y/o colores muy claros.
                     </span>
                     <span>
                       Agradecemos de antemano su comprensión y colaboración para

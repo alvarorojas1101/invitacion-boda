@@ -16,10 +16,12 @@
     </div>
 
     <!-- Fecha con líneas -->
-    <span
-      class="date-hero mt-10 w-full table text-2xl desktop:text-xl greater-desktop:text-2xl text-color02 font-rubik font-semibold">
-      06.06.2025
-    </span>
+    <div class="date-container absolute top-1/4 left-1/2 transform -translate-x-1/2">
+      <span
+        class="date-hero w-full table text-2xl desktop:text-xl greater-desktop:text-2xl text-color02 font-rubik font-semibold">
+        06.06.2025
+      </span>
+    </div>
     <!-- Flecha hacia abajo -->
     <div class="mt-auto pb-6">
       <img src="/arrow_down.gif" class="w-14 desktop:w-20" alt="Arrow Down" />
@@ -28,6 +30,10 @@
 </section>
 
 <style>
+  .date-container {
+    z-index: 10;
+  }
+
   .date-hero::before,
   .date-hero::after {
     border-top: 1px solid white;
