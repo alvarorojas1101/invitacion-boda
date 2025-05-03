@@ -122,7 +122,7 @@ function TipsModal() {
                     <span className="font-semibold">Ceremonia Civil:</span>
                     <span>
                       {" "}
-                      Comienza puntualmente a las 12:00 horas, así que por
+                      Comienza puntualmente a las 12:30 horas, así que por
                       favor, llega puntualmente.
                     </span>
                   </li>

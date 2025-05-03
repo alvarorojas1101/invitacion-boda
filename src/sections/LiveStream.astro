@@ -1,0 +1,75 @@
+---
+import Title from "@/components/Title.astro";
+---
+
+<section class="live-stream-section">
+  <div
+    class="max-w-[1140px] phone:w-full phone:px-2 mx-auto mb-12 mt-12 desktop:mb-14 desktop:mt-24 text-center">
+    <Title title="Transmisión en Vivo" />
+
+    <div class="live-stream-content">
+      <p class="font-rubik desktop:text-xl text-gray-400 mb-8">
+        Para nuestros seres queridos que no pueden unirse a nosotros en persona,
+        hemos preparado una transmisión en vivo de la ceremonia.
+      </p>
+
+      <div class="live-stream-option">
+        <h3 class="font-parisienne text-3xl mb-4">Google Meet</h3>
+        <div class="live-stream-info">
+          <p class="text-gray-400 mb-4">
+            La ceremonia será transmitida en vivo a través de Google Meet
+          </p>
+          <a
+            href="https://meet.google.com/enw-dnsu-hjj"
+            target="_blank"
+            class="bg-color01 text-color02 px-8 py-3 rounded-full text-lg font-medium hover:bg-color01/90 transition-colors">
+            Unirse a la ceremonia
+          </a>
+        </div>
+      </div>
+
+      <div class="live-stream-tips mt-8">
+        <h4 class="font-rubik text-xl mb-4">Consejos para la transmisión:</h4>
+        <ul class="space-y-4 text-gray-400">
+          <li>• La transmisión comenzará 15 minutos antes de la ceremonia</li>
+          <li>• Mantén tu micrófono desactivado durante la ceremonia</li>
+          <li>• Usa auriculares para una mejor experiencia de audio</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .live-stream-section {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4rem 0;
+    border-radius: 1rem;
+  }
+
+  .live-stream-option {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+    margin: 2rem 0;
+  }
+
+  .live-stream-option:hover {
+    transform: translateY(-5px);
+  }
+
+  .live-stream-info {
+    margin-top: 1rem;
+  }
+
+  .live-stream-tips {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+
+  .live-stream-tips ul {
+    list-style-position: inside;
+  }
+</style>
