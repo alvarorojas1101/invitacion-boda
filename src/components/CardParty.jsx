@@ -20,9 +20,9 @@ export default function CardParty({ title, guid, description, icon }) {
         {description}
       </span>
 
-      {guid == 1 ? (
+      {guid == 2 ? (
         <DressCodeModal />
-      ) : guid == 2 ? (
+      ) : guid == 3 ? (
         <TipsModal />
       ) : (
         <MusicaModal />
