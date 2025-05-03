@@ -9,7 +9,7 @@ const TIMESTAMP_END = new Date(2025, 5, 6, 12, 30).getTime();
     class="max-w-6xl desktop:px-16 pb-10 text-center mx-auto flex flex-col items-center justify-center"
 >
         <Title title="Faltan" />
-    <div data-date={TIMESTAMP_END} class="flex flex-row mt-5">
+    <div data-date={TIMESTAMP_END} class="flex flex-row mt-5 mb-12">
         <div class="border-r-[1px] flex flex-col px-5 border-[#6F6F6E]">
             <span data-days class="text-[#89713E] text-4xl desktop:text-5xl">
                 00
@@ -25,8 +25,8 @@ const TIMESTAMP_END = new Date(2025, 5, 6, 12, 30).getTime();
         </div>
 
         <div class="border-r-[1px] flex flex-col px-5 border-[#6F6F6E]">
-            <span data-minutes class="text-[#89713E] text-4xl desktop:text-5xl"
-                >00
+            <span data-minutes class="text-[#89713E] text-4xl desktop:text-5xl">
+                00
             </span>
             <span class="text-[#6F6F6E] desktop:text-[25px]"> MIN </span>
         </div>
@@ -36,6 +36,9 @@ const TIMESTAMP_END = new Date(2025, 5, 6, 12, 30).getTime();
             </span>
             <span class="text-[#6F6F6E] desktop:text-[25px]"> SEG </span>
         </div>
+    </div>
+    <div class="relative flex justify-center">
+        <img src="/render (2).png" class="w-40 desktop:w-48" alt="Anillo" />
     </div>
     <Divider />
 </section>

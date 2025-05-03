@@ -89,14 +89,14 @@ function TipsModal() {
         + Info
       </button>
       <Modal
-        backdrop={"blur"}
+        backdrop="blur"
         isOpen={isOpen}
-        isDismissable={false}
-        isKeyboardDismissDisabled={true}
         onOpenChange={onOpenChange}
         placement="center"
+        isDismissable={true}
+        isKeyboardDismissDisabled={false}
         size="xl"
-        className="p-8 phone:max-h-[60vh] max-h-[60vh] desktop:max-h-[90vh] overflow-y-auto">
+        className="p-4 phone:p-2 desktop:p-8 phone:max-h-[60vh] max-h-[90vh] overflow-y-auto">
         <ModalContent>
           {(onClose) => (
             <>
@@ -133,7 +133,7 @@ function TipsModal() {
                   </li>
                 </ul>
 
-                <h3 style={title}>peticiónes</h3>
+                <h3 style={title}>Peticiónes</h3>
                 <ul style={list}>
                   <li style={li}>
                     <span className="font-semibold">Invitados:</span>

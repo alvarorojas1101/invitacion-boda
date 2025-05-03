@@ -60,14 +60,14 @@ export default function AsistenciaModal({ type }) {
         Confirmar Asistencia
       </button>
       <Modal
-        backdrop={"blur"}
+        backdrop="blur"
         isOpen={isOpen}
         onOpenChange={onOpenChange}
         placement="center"
         size="xl"
-        isDismissable={false}
-        isKeyboardDismissDisabled={true}
-        className="p-8">
+        isDismissable={true}
+        isKeyboardDismissDisabled={false}
+        className="p-4 phone:p-2 desktop:p-8 phone:max-h-[60vh] max-h-[90vh] overflow-y-auto">
         <ModalContent>
           {(onClose) => (
             <>
