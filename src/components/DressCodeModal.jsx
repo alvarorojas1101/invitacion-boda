@@ -27,7 +27,7 @@ function DressCodeModal() {
         isDismissable={false}
         isKeyboardDismissDisabled={true}
         size="xl"
-        className="p-8">
+        className="p-4 phone:p-2 desktop:p-8 phone:max-h-[60vh] max-h-[90vh] overflow-y-auto">
         <ModalContent>
           {(onClose) => (
             <>
