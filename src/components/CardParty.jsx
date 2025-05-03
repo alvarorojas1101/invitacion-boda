@@ -21,11 +21,11 @@ export default function CardParty({ title, guid, description, icon }) {
       </span>
 
       {guid == 1 ? (
-        <MusicaModal />
-      ) : guid == 2 ? (
         <DressCodeModal />
-      ) : (
+      ) : guid == 2 ? (
         <TipsModal />
+      ) : (
+        <MusicaModal />
       )}
     </Card>
   );

@@ -23,13 +23,6 @@ import Title from "@/components/Title.astro";
             class="flex flex-wrap justify-center items-center flex-row gap-8 flex-1"
         >
             <CardParty
-                guid="1"
-                title="Música"
-                icon="music"
-                description="¿Cuál es la canción que no debe faltar en la PlayList de la Celebración?"
-                client:load
-            />
-            <CardParty
                 guid="2"
                 title="Dress Code"
                 icon="dress-code"
@@ -41,6 +34,13 @@ import Title from "@/components/Title.astro";
                 title="Tips y Notas"
                 icon="tips"
                 description="Información importante para tener en cuenta"
+                client:load
+            />
+            <CardParty
+                guid="1"
+                title="Música"
+                icon="music"
+                description="¿Cuál es la canción que no debe faltar en la PlayList de la Celebración?"
                 client:load
             />
         </div>
