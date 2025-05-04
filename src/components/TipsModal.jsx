@@ -133,7 +133,7 @@ function TipsModal() {
                   </li>
                 </ul>
 
-                <h3 style={title}>Peticiónes</h3>
+                <h3 style={title}>Peticiones</h3>
                 <ul style={list}>
                   <li style={li}>
                     <span className="font-semibold">Invitados:</span>
