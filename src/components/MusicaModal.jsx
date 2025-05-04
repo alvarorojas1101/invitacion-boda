@@ -15,21 +15,16 @@ import { db } from "../firebase";
 import { addDoc, collection } from "firebase/firestore";
 
 const generosmusicales = [
-  "Vallenato",
+  "Cumbia",
   "Merengue",
-  "Reggaetón",
-  "Champeta",
+  "Paso Doble",
   "Pop",
   "Popular",
-  "Cumbia",
+  "Reggaetón",
+  "Llanera",
   "Salsa",
-  "Bolero",
-  "Valse Criollo",
-  "Marinera",
-  "Jazz",
-  "Soul",
-  "R&B",
-  "Blues",
+  "Tambor",
+  "Vallenato",
   "Otros",
 ];
 
