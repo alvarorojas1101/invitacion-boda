@@ -122,7 +122,7 @@ function TipsModal() {
                     <span className="font-semibold">Ceremonia Civil:</span>
                     <span>
                       {" "}
-                      Comienza a las 12:30 horas, así que por favor, llega
+                      Comienza 12:30 horas, así que por favor, llega
                       puntualmente.
                     </span>
                   </li>
@@ -159,9 +159,9 @@ function TipsModal() {
                     </span>
                   </li>
                 </ul>
-                <h3 className="font-bold text-base">Regalos</h3>
-                <ul className="flex flex-col gap-2 ml-4">
-                  <li className="text-sm flex flex-col gap-1">
+                <h3 style={title}>Regalos</h3>
+                <ul style={list}>
+                  <li style={li}>
                     Estamos muy emocionados de celebrar nuestro matrimonio con
                     ustedes y estamos profundamente agradecidos por su amor y
                     apoyo. Si desean honrarnos con un regalo, estas son algunas
