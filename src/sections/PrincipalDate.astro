@@ -1,6 +1,7 @@
 ---
 import Divider from "@/components/Divider.astro";
 import AsistenciaModal from "@/components/AsistenciaModal.jsx";
+import TimezoneComponentSimple from "@/components/TimezoneComponentSimple.jsx";
 ---
 
 <section
@@ -13,9 +14,10 @@ import AsistenciaModal from "@/components/AsistenciaModal.jsx";
     <ul>
       <li>
         <p class="text-[28px] text-[#6F6F6E] font-medium">Día</p>
-        <span class="text-[20px] font-normal text-[#C6C6C5]">
-          Viernes 6 de Junio - 12:30hs
-        </span>
+        <div class="text-[20px] font-normal text-[#C6C6C5]">
+          <p>Viernes 6 de Junio</p>
+          <TimezoneComponentSimple client:load time="12:30" />
+        </div>
         <a
           data-id="NL21835056"
           href="https://www.addevent.com/event/qj25338673"
@@ -53,9 +55,10 @@ import AsistenciaModal from "@/components/AsistenciaModal.jsx";
     <ul>
       <li>
         <p class="text-[28px] text-[#6F6F6E] font-medium">Día</p>
-        <span class="text-[20px] font-normal text-[#C6C6C5]">
-          Viernes 6 de Junio - 19:00hs
-        </span>
+        <div class="text-[20px] font-normal text-[#C6C6C5]">
+          <p>Viernes 6 de Junio</p>
+          <TimezoneComponentSimple client:load time="19:00" />
+        </div>
 
         <a
           data-id="TK21835117"
